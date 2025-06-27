@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pick Your Hirono</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe0f0, #f7f7ff);
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #e91e63;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.9em;
+      padding: 0 10px 20px;
+    }
+
+    .choose-btn {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .choose-btn:hover {
+      background: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pick Your Hirono</h1>
+  <div class="subtitle">Choose your favorite Hirono version!</div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250.png?text=Hirono+Classic" alt="Hirono Classic">
+      <h3>Hirono Classic</h3>
+      <p>The original style: calm, elegant, and mysterious.</p>
+      <button class="choose-btn">Pick Me</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250.png?text=Hirono+Idol" alt="Hirono Idol">
+      <h3>Hirono Idol</h3>
+      <p>The energetic idol version, full of sparkle and smiles!</p>
+      <button class="choose-btn">Pick Me</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250.png?text=Hirono+Gamer" alt="Hirono Gamer">
+      <h3>Hirono Gamer</h3>
+      <p>A chill and competitive gamer girl—Hirono with attitude.</p>
+      <button class="choose-btn">Pick Me</button>
+    </div>
+  </div>
+</body>
+</html>
